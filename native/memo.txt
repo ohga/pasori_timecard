@@ -1,0 +1,5 @@
+
+javac jp/ttlv/t/felica/Polling.java
+javah -d .  jp.ttlv.t.felica.Polling
+gcc -fPIC -shared felica_polling.c -I/usr/local/include/libpafe -I/etc/alternatives/java_sdk/include -I/etc/alternatives/java_sdk/include/linux -lpafe -o libfelica_polling.so
+
